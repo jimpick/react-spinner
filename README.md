@@ -1,38 +1,19 @@
-# [React](http://facebook.github.io/react/)-spinner
+# react-spinner
 
-Zero configuration loading spinner.
-
-## install
+A component built for the [React](http://facebook.github.io/react/) framework.
 
 ```sh
-bower install react-spinner
+npm install react-spinner
 ```
-
-Simply drop the script somewhere on your page (after React of course):
-
-```html
-<script src="path/to/react-spinner.js"></script>
-```
-
-And the CSS file:
-
-```html
-<link rel="stylesheet" type="text/css" href="path/to/react-spinner.css">
-```
-
-The spinner centers itself based on its container's dimensions.
 
 ## Usage
 
-```html
-/**
-* @jsx React.DOM
-*/
+To be completed.
 
-// doesn't get simpler than this, does it?
-React.renderComponent(<Spinner/>, document.body);
-```
+## For developers
 
-## License
+ * Put your code in `src/`.
+ * Put your tests in `spec/`. Use `npm test` to run them.
+ * Run `npm start` to watch or `npm run build` to build your module to `lib/`.
+ * Put your app or example in `src/entrypoint.js` and use `npm run server` to see it.
 
-MIT.

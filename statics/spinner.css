@@ -19,7 +19,7 @@
   left: -3.25px;
 }
 
-@keyframes "loading-spin" {
+@keyframes loading-spin {
  0% { opacity: 1; }
  100% { opacity: 0.15; }
 }
@@ -29,7 +29,7 @@
  100% { opacity: 0.15; }
 }
 
-@-webkit-keyframes "loading-spin" {
+@-webkit-keyframes loading-spin {
  0% { opacity: 1; }
  100% { opacity: 0.15; }
 }

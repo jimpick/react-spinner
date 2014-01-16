@@ -1,3 +1,8 @@
+/** @jsx React.DOM */
+
+var React = require('react');
+var spinnerCSS = require('statics/spinner.css');
+
 var Spinner = React.createClass({
   render: function() {
     var bars = [];
@@ -12,12 +17,18 @@ var Spinner = React.createClass({
         barStyle.transform = 'rotate(' + (i * 30) + 'deg) translate(9.5px)';
 
       bars.push(
-        React.DOM.div({style: barStyle, className: "loading-spinner-bar"})
+        <div style={barStyle} className={spinnerCSS['.loading-spinner-bar']} />
       );
     }
 
     return this.transferPropsTo(
-      React.DOM.div({className: "loading-spinner"}, bars)
+      <div className={spinnerCSS['.loading-spinner']}>{bars}</div>
     );
   }
 });
+
+
+// test
+React.renderComponent(<Spinner />, document.body);
+// useless right now
+module.exports = Spinner;

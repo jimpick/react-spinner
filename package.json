@@ -1,0 +1,38 @@
+{
+  "name": "react-spinner",
+  "main": "src/index.js",
+  "description": "react-spinner, a component for the React framework.",
+  "peerDependencies": {
+    "react": "~0.8"
+  },
+  "devDependencies": {
+    "browserify": "~3.14.1",
+    "jasmine-node": "~1.12.0",
+    "reactify": "~0.4.0",
+    "collect-statics": "git+https://github.com/petehunt/collect-static.git#cl",
+    "statics": "git+https://github.com/petehunt/statics.git",
+    "uglify-js": "~2.4.8",
+    "watchify": "~0.5.0",
+    "react": "~0.8.0",
+    "envify": "~0.2.0",
+    "jsxc": "~0.1.6",
+    "beefy": "~0.7.1"
+  },
+  "scripts": {
+    "test": "echo 'never trust interns'",
+    "prepublish": "node_modules/.bin/jsxc -e jsx src src",
+    "build": "npm dedupe && node_modules/.bin/collect-statics ./ && mkdir -p ./test/build/statics && cp -r node_modules/statics/* ./test/build/statics/ && cat ./test/build/statics/*.css > ./test/build/statics/_all.css && browserify src/index.jsx > test/build/_all.js -t reactify -t envify",
+    "start": "beefy test/index.html --live --open"
+  },
+  "browserify": {
+    "transform": [
+      "envify"
+    ]
+  },
+  "version": "0.0.0",
+  "author": "",
+  "license": "ISC",
+  "directories": {
+    "test": "test"
+  }
+}
