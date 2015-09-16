@@ -25,9 +25,6 @@
     "url": "https://github.com/chenglou/react-spinner/issues"
   },
   "homepage": "https://github.com/chenglou/react-spinner",
-  "peerDependencies": {
-    "react": ">=0.12.1"
-  },
   "example": {
     "script": "example/spin.jsx",
     "style": "react-spinner.css"
