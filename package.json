@@ -28,8 +28,5 @@
   "example": {
     "script": "example/spin.jsx",
     "style": "react-spinner.css"
-  },
-  "devDependencies": {
-    "react-tools": "^0.12.1"
   }
 }
